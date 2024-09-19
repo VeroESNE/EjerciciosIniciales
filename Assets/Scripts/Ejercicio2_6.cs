@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class Ejercicio2_6 : MonoBehaviour
 {
-    int vidas; //tengo que meter algo
+    int puntuacion1 = 2;
+    int puntuacion2 = 4;
+    int puntuacion3 = 6;
+    int mediaPuntuaciones;
     // Start is called before the first frame update
     void Start()
     {
-        
+        mediaPuntuaciones = (puntuacion1 + puntuacion2 + puntuacion3) / 3;
+        Debug.Log( "Puntuación 1: " + puntuacion1 + ", Puntuación 2: " + puntuacion2 + ", Puntuación 3: " + puntuacion3 + ", Media: " + mediaPuntuaciones);
     }
 
     // Update is called once per frame
@@ -17,7 +21,3 @@ public class Ejercicio2_6 : MonoBehaviour
         
     }
 }
-
-//Un jugador tiene tres puntuaciones cualesquiera en un videojuego. 
-//Cada una de ellas  representada por un número entero. 
-//Desarrolla un programa que muestre las tres  puntuaciones y su media. 
